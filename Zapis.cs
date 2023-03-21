@@ -10,15 +10,22 @@ namespace Money
     {
         public string Name { get; set;}
         public string Type { get; set;}
-        public int Money {
-            get {
-                return Money;
-            }
-            set {
+        private int _money;
+
+        public int Money
+        {
+            get { return _money; }
+            set
+            {
                 if (value < 0)
                 {
-                    Money = value * -1;
+                    //Money = value * -1;
                     IsIncome = false;
+                    _money = value * -1;
+                }
+                else
+                {
+                    _money = value;
                 }
             }
         }

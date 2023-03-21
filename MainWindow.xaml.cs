@@ -24,6 +24,8 @@ namespace Money
         public MainWindow()
         {
             InitializeComponent();
+            zapisi = Jdaughter.Deserialize<List<Zapis>>();
+            types = Jdaughter.Deserialize2<List<string>>();
             Day.Text = DateTime.Now.ToString();
         }
 
@@ -56,7 +58,13 @@ namespace Money
             Name.Text = "";
             Summ.Text = "";
             TypeSpisok.SelectedItem = null;
-            Jdaughter.Serialize(zapisi, types);
+            TypeSpisok.Items.Clear();
+            foreach (string item in types)
+            {
+                TypeSpisok.Items.Add(item);
+            }
+            Jdaughter.Serialize(zapisi, 1);
+            Jdaughter.Serialize(types, 0);
         }
 
         private void AddType_Click(object sender, RoutedEventArgs e)
@@ -68,6 +76,7 @@ namespace Money
                 types.Add(type.Type1.Text);
                 TypeSpisok.Items.Add(type.Type1.Text);
             }
+            Clear();
         }
 
         private void Day_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -90,7 +99,7 @@ namespace Money
             {
                 zapisi[zapisi.IndexOf(TodayZapisi[Spisok.SelectedIndex])].Name = Name.Text;
                 zapisi[zapisi.IndexOf(TodayZapisi[Spisok.SelectedIndex])].Type = TypeSpisok.Text;
-                if (zapisi[zapisi.IndexOf(TodayZapisi[Spisok.SelectedIndex])].Money < 0)
+                if (Convert.ToInt32(Summ.Text) < 0)
                 {
                     zapisi[zapisi.IndexOf(TodayZapisi[Spisok.SelectedIndex])].Money = Convert.ToInt32(Summ.Text) * -1;
                     zapisi[zapisi.IndexOf(TodayZapisi[Spisok.SelectedIndex])].IsIncome = false;

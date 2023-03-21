@@ -7,10 +7,16 @@ namespace Money
 {
     internal class Jdaughter
     {
-        public static void Serialize<T>(T business, List<string> types)
+        public static void Serialize<T>(T business, int a)
         {
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\business.json", JsonConvert.SerializeObject(business));
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\types.json", JsonConvert.SerializeObject(types));
+            if (a == 1)
+            {
+                File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\business.json", JsonConvert.SerializeObject(business));
+            }
+            else if (a == 0)
+            {
+                File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\types.json", JsonConvert.SerializeObject(business));
+            }
         }
         public static T Deserialize<T>()
         {
