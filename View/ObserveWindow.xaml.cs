@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Money.ViewModel;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,21 +13,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Money
+namespace Money.View
 {
     /// <summary>
-    /// Логика взаимодействия для Type.xaml
+    /// Логика взаимодействия для ObserveWindow.xaml
     /// </summary>
-    public partial class Type : Window
+    public partial class ObserveWindow : Window
     {
-        public Type()
+        public ObserveWindow(MainViewModel mainViewModel)
         {
+            DataContext = new ObserveViewModel(mainViewModel);
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, RoutedEventArgs e)
-        {
-            DialogResult = true;
         }
     }
 }

@@ -15,8 +15,8 @@
         <Grid.ColumnDefinitions>
 
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button1" Content="Добавить тип" Grid.Row="2" FontSize="30" Click="Button1_Click"/>
-        <TextBox x:Name="Type1" Grid.Row="1"></TextBox>
+        <Button x:Name="Button1" Content="Добавить тип" Grid.Row="2" FontSize="30" Command="{Binding Add_Command}"/>
+        <TextBox x:Name="Type1" Grid.Row="1" Text="{Binding TextB}"></TextBox>
         <TextBlock Text="Введите тип" TextAlignment="Center" FontSize="40"></TextBlock>
     </Grid>
 </Window>

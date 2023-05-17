@@ -3,11 +3,9 @@ C:\Users\igosh\source\repos\Money\bin\Debug\Money.exe
 C:\Users\igosh\source\repos\Money\bin\Debug\Money.pdb
 C:\Users\igosh\source\repos\Money\obj\Debug\Money.csproj.AssemblyReference.cache
 C:\Users\igosh\source\repos\Money\obj\Debug\Money.csproj.SuggestedBindingRedirects.cache
-C:\Users\igosh\source\repos\Money\obj\Debug\MainWindow.g.cs
 C:\Users\igosh\source\repos\Money\obj\Debug\App.g.cs
 C:\Users\igosh\source\repos\Money\obj\Debug\Money_MarkupCompile.cache
 C:\Users\igosh\source\repos\Money\obj\Debug\Money_MarkupCompile.lref
-C:\Users\igosh\source\repos\Money\obj\Debug\MainWindow.baml
 C:\Users\igosh\source\repos\Money\obj\Debug\Money.g.resources
 C:\Users\igosh\source\repos\Money\obj\Debug\Money.Properties.Resources.resources
 C:\Users\igosh\source\repos\Money\obj\Debug\Money.csproj.GenerateResource.cache
@@ -17,5 +15,12 @@ C:\Users\igosh\source\repos\Money\obj\Debug\Money.pdb
 C:\Users\igosh\source\repos\Money\bin\Debug\Newtonsoft.Json.dll
 C:\Users\igosh\source\repos\Money\bin\Debug\Newtonsoft.Json.xml
 C:\Users\igosh\source\repos\Money\obj\Debug\Money.csproj.CopyComplete
-C:\Users\igosh\source\repos\Money\obj\Debug\Type.g.cs
-C:\Users\igosh\source\repos\Money\obj\Debug\Type.baml
+C:\Users\igosh\source\repos\Money\obj\Debug\View\MainWindow.g.cs
+C:\Users\igosh\source\repos\Money\obj\Debug\View\MainWindow.baml
+C:\Users\igosh\source\repos\Money\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\igosh\source\repos\Money\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\igosh\source\repos\Money\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\igosh\source\repos\Money\obj\Debug\View\ObserveWindow.g.cs
+C:\Users\igosh\source\repos\Money\obj\Debug\View\TypeWindow.g.cs
+C:\Users\igosh\source\repos\Money\obj\Debug\View\ObserveWindow.baml
+C:\Users\igosh\source\repos\Money\obj\Debug\View\TypeWindow.baml
